@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
-/* Font Weights:: Light: 300 / Normal: 400 / Bold: 700
-font-family: 'Raleway', sans-serif;
-*/
 :root {
   --main-font-color: #000000;
   --nav-font-color: #1560BD;
@@ -45,7 +42,6 @@ body {
 }
 
 /* Navbar */
-
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -66,7 +62,7 @@ body {
   padding: 0 1rem;
   list-style: none;
   text-transform: uppercase;
-  transition: transform 0.4s ease-in;
+  transition: transform 0.4s;
 }
 
 .navbar ul li:hover {
@@ -79,27 +75,7 @@ body {
 .navbar ul li ion-icon:hover { transform: scale(130%); }
 
 /* Hero */
-.hero {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)), url(../Assets/Images/hero_img.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; */
-  height: 100vh;
-}
-
-/* .hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../Assets/Images/hero_img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  filter: brightness(60%);
-} */
+.hero { height: 100vh; }
 
 .hero-content {
   display: flex;
@@ -108,13 +84,9 @@ body {
   height: 100vh;
 }
 
-.hero-content div {
-  margin: 0 1rem;
-}
+.hero-content div { margin: 0 1rem; }
 
-.left-header p {
-  font-size: 1.6rem;
-}
+.left-header p { font-size: 1.6rem; }
 
 .right-header {
   background-color: var(--nav-font-color);
@@ -130,11 +102,11 @@ body {
 .hero-title,
 .hero-subtitle {
   color: var(--main-font-color);
-  /* text-align: center; */
 }
 
 .hero-title { font-size: 4rem; }
 
+/* 'Level Up' highlighting */
 .hero-title span { color: var(--nav-font-color); }
 
 .hero-subtitle { 
@@ -164,9 +136,7 @@ body {
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.hero-button:hover {
-  background-color: var(--hover-effect-color);
-}
+.hero-button:hover { background-color: var(--hover-effect-color); }
 
 /* Footer */
 footer {
