@@ -9,6 +9,7 @@
 </head>
 <body>
   <section class="hero">
+    <!-- Nav Bar -->
     <nav>
       <div class="navbar">
         <img src="./assets/logos/nav_logo.svg" class="nav-logo" />
@@ -28,8 +29,8 @@
       <div class="left-header">
         <p>Still looking for more customers?</p>
         <h1 class="hero-title">It's Time to <span>Level Up!</span></h1>
-        <h2 class="hero-subtitle">You can focus on running your business while I focus on growing it.</h2>
-        <button class="hero-button">Get Started</button>
+        <h2>You can focus on running your business while I focus on growing it.</h2>
+        <button class="btn">Get Started</button>
       </div>
       <div class="right-header">
         <img src="./assets/images/profile_photo.webp" alt="Profile Picture">
@@ -38,16 +39,92 @@
   </header>
   </section>
 
-  <section class="section-divider">
-    <img src="./assets/logos/section_divider.png" alt="Section Divider">
-  </section>
+  <div class="section-divider-top"></div>
+  <div class="section-divider-bottom"></div>
 
+  <!-- How I'll Grow Your Business -->
   <section class="how">
-    <h2>How I'll Grow Your Business</h2>
+    <h2 class="section-headline">How I'll Grow Your Business</h2>
+    <div class="flex-container">
+      <div class="how-item">
+        <div class="center-icon">
+          <ion-icon class="icon" name="logo-dribbble"></ion-icon>
+        </div>
+        <h3>Web Design</h3>
+        <p>I can create clean, modern, and consise web sites and landing pages for your business to attract new customers.  I can also take your current web site and work to optimize it.</p>
+      </div>
+      <div class="how-item">
+        <div class="center-icon">
+          <ion-icon class="icon" name="pencil-outline"></ion-icon>
+        </div>
+        <h3>SEO</h3>
+        <p>I can help your business's web site thrive within online search engines, such as Google.</p>
+      </div>
+      <div class="how-item">
+        <div class="center-icon">
+          <ion-icon class="icon" name="cash-outline"></ion-icon>
+        </div>
+        <h3>Results</h3>
+        <p>An easily searchable web site <br />
+        <span class="blue-bold">+</span> <br /> 
+        a web site that attracts customers<br />
+        <span class="blue-bold">=</span><br/>
+        <span class="blue-bold">more revenue for you!</span></p>
+      </div>
+    </div>
+    <div class="flex-container-space-around">
+      <img src="/assets/images/grow_business.webp" alt="Growing Your Business">
+      <h3>You get to focus on running your business, while leaving the opportunities for growth to me!</h3>
+    </div>
+  </section>
+
+  <div class="section-divider-top"></div>
+  <div class="section-divider-bottom"></div>
+
+  <!-- Past Projects -->
+  <section class="projects">
+    <h2 class="section-headline">Past Projects</h2>
+    <div class="flex-container-space-around">
+      <div class="project">
+        <a href="https://crumler.github.io/GhostBearPizza/" target="_blank"><img class="ghost-bear" src="./assets/images/ghost_bear.webp" alt="Ghost Bear Pizza"></a>
+        <p class="project-name">Ghost Bear Pizza</p>
+      </div>
+      <div class="project">
+        <img class="nasa" src="./assets/images/nasa.webp" alt="Ghost Bear Pizza">
+        <p class="project-name">NASA Photo of the Day</p>
+      </div>
+      <div class="project">
+        <img class="mk" src="./assets/images/mk.webp" alt="Ghost Bear Pizza">
+        <p class="project-name">MK Weather App</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me -->
+  <section class="contact">
+    <h2 class="section-headline">Please Feel Free to Reach Out!</h2>
+    <form action="#">
+      <div class="flex-container-column">
+        <div>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+        <div>
+          <label for="email">E-Mail Address:</label><br />
+          <input type="text" id="lname" name="email" placeholder="Enter your e-mail address">
+        </div>
+        <div>
+          <textarea class="message" name="message" id="message" placeholder="Enter your message to me" cols="30" rows="10" minlength="10" maxlength="100"></textarea>
+        </div>
+        <input type="submit" value="Submit" class="btn">
+      </div>
+    </form>
+
   </section>
 
 
-  <footer class="flex-container">
+  <footer class="flex-container-center-all">
+    <img src="./assets/logos/nav_logo.svg" class="nav-logo" />
     <p>Copyright @<span class="copyright-year"></span></p>
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
