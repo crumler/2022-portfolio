@@ -30,6 +30,10 @@ h2 {
   font-weight: 700;
 }
 
+a { text-decoration: none; }
+
+a:visited { color: inherit; }
+
 .flex-container {
   display: flex;
   justify-content: center;
@@ -244,6 +248,7 @@ p { line-height: 150%; }
   justify-content: center;
   align-items: center;
   width: 40rem;
+  text-align: center;
 }
 
 .project p {
@@ -256,6 +261,7 @@ p { line-height: 150%; }
 }
 
 .project img {
+  display: inline;
   width: 70%;
   height: auto;
 }
