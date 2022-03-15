@@ -111,6 +111,14 @@ a:visited { color: inherit; }
   font-weight: 700;
 }
 
+input,
+input:focus,
+textarea,
+textarea:focus {
+  outline: none;
+  border-color: var(--nav-font-color);
+}
+
 p { line-height: 150%; }
 
 /* Navbar */
@@ -121,7 +129,7 @@ p { line-height: 150%; }
   font-size: 1.6rem;
   font-weight: 700;
   padding: 0.5rem 0.8rem;
-  color: var(--nav-font-color);
+  color: var(--light-bg-color);
 }
 
 .nav-logo {
@@ -147,7 +155,15 @@ p { line-height: 150%; }
 .navbar ul li ion-icon:hover { transform: scale(130%); }
 
 /* Hero */
-.hero { height: 100vh; }
+.hero {
+  height: 100vh;
+  /* background: url('../assets/images/hero-background.svg') center no-repeat cover; */
+  background-image: url('../assets/images/hero-background.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 .hero-content {
   display: flex;
@@ -161,7 +177,7 @@ p { line-height: 150%; }
 .left-header p { font-size: 1.6rem; }
 
 .right-header {
-  background-color: var(--nav-font-color);
+  background-color: transparent;
   clip-path: polygon(0 0, 63% 0, 100% 100%, 0% 100%);
 }
 
@@ -199,8 +215,8 @@ p { line-height: 150%; }
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 10px 30px var(--hover-effect-color);
+          box-shadow: 0 10px 30px var(--hover-effect-color);
 }
 
 .btn:hover { background-color: var(--hover-effect-color); }
@@ -275,7 +291,6 @@ form {
   border: 1px solid red;
   margin-inline: auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  text-transform: uppercase;
   font-size: 2rem;
   margin-top: 2rem;
   padding: 1.3rem;
@@ -286,10 +301,9 @@ form {
           transform: translate(0%, 0%);
   overflow: hidden;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
-  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 10px 30px var(--hover-effect-color);
+          box-shadow: 0 10px 30px var(--hover-effect-color);
 }
 
 .contact {
