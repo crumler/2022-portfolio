@@ -31,6 +31,10 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 1.8rem;
+}
+
 a { text-decoration: none; }
 
 a:visited { color: inherit; }
@@ -183,7 +187,7 @@ p { line-height: 150%; }
 
 .right-header img {
   height: 50rem;
-  width: auto;
+  width: 100%;
   border-radius: 50%;
 }
 
@@ -250,6 +254,10 @@ p { line-height: 150%; }
 .how-item p {
   text-align: center;
   margin-top: 3rem;
+}
+
+.grow-business-img {
+  width: 100%;
 }
 
 /* Projects */
