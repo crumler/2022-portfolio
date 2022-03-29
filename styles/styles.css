@@ -6,6 +6,8 @@
   --hover-effect-color: #3e7cc7;
   --light-bg-color: #edf9fc;
   --dark-bg-color: #e1edf5;
+  --attention-color: #e96005;
+  --attention-color-hover: #da5801;
 }
 
 * {
@@ -35,8 +37,7 @@ h3 {
   font-size: 1.8rem;
 }
 
-a { text-decoration: none; }
-
+a,
 a:visited { color: inherit; }
 
 .flex-container {
@@ -47,8 +48,8 @@ a:visited { color: inherit; }
 
 .flex-container-center-all {
   display: flex;
-  max-width: 75%;
-  justify-content: space-between;
+  /* max-width: 50%; */
+  justify-content: center;
   align-items: center;
 }
 
@@ -80,25 +81,15 @@ a:visited { color: inherit; }
   border: 1px solid red;
 }
 
+.photo-container {
+  height: 100%;
+  width: auto;
+}
+
 .section-headline {
   font-size: 3rem;
   margin-top: 3rem;
   padding-top: 3rem;
-}
-
-.section-divider-top {
-  max-width: 100vw;
-  height: 4vh;
-  clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),calc(50% + 50.00px) calc(100% - 50px),50% 100%,calc(50% - 50.00px) calc(100% - 50px),0 calc(100% - 50px));
-  background-color: var(--nav-font-color);
-}
-
-.section-divider-bottom {
-  max-width: 100vw;
-  height: 2vh;
-  clip-path: polygon(0 0,calc(50% - 4.14px - 50.00px) 0,50% calc(50px + 4.14px),calc(50% + 4.14px + 50.00px) 0,100% 0,100% 100%,0 100%);
-  background-color: var(--hover-effect-color);
-  margin-top: -40px;
 }
 
 .icon {
@@ -203,7 +194,7 @@ p { line-height: 150%; }
 
 .btn {
   cursor: pointer;
-  background-color: var(--nav-font-color);
+  background-color: var(--attention-color);
   color: var(--light-bg-color);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-transform: uppercase;
@@ -223,7 +214,7 @@ p { line-height: 150%; }
           box-shadow: 0 10px 30px var(--hover-effect-color);
 }
 
-.btn:hover { background-color: var(--hover-effect-color); }
+.btn:hover { background-color: var(--attention-color-hover); }
 
 /* How I'll Grow Your Business */
 .how {
@@ -254,10 +245,6 @@ p { line-height: 150%; }
 .how-item p {
   text-align: center;
   margin-top: 3rem;
-}
-
-.grow-business-img {
-  width: 100%;
 }
 
 /* Projects */
@@ -341,6 +328,9 @@ input {
 
 /* Footer */
 footer {
+  margin-top: 3rem;
   font-size: 1.4rem;
   text-align: center;
 }
+
+footer p { margin-left: 5rem; }

@@ -42,8 +42,6 @@
   </header>
   </section>
 
-  <div class="section-divider-top"></div>
-  <div class="section-divider-bottom"></div>
 
   <!-- How I'll Grow Your Business -->
   <section class="how" id="how">
@@ -77,13 +75,14 @@
     </div>
 
     <div class="flex-container-space-around">
-      <img src="/assets/images/grow_business.webp" class="grow-business-img" alt="Growing Your Business">
+      <div class="photo-container">
+        <img src="/assets/images/grow_business.webp" alt="Growing Your Business">
+      </div>
+      
       <h3>You get to focus on running your business, while leaving the opportunities for growth to me!</h3>
     </div>
   </section>
 
-  <div class="section-divider-top"></div>
-  <div class="section-divider-bottom"></div>
 
   <!-- Past Projects -->
   <section class="projects" id="projects">
@@ -112,8 +111,6 @@
     </div>
   </section>
 
-  <div class="section-divider-top"></div>
-  <div class="section-divider-bottom"></div>
 
   <!-- Contact Me -->
   <section class="contact" id="contact">
@@ -123,14 +120,14 @@
       <div class="flex-container-column">
         <div>
           <label for="name">Name:</label><br />
-          <input type="text" id="name" name="name" placeholder="Enter your name">
+          <input type="text" id="name" name="name" placeholder="Name">
         </div>
         <div>
           <label for="email">E-Mail Address:</label><br />
-          <input type="text" id="lname" name="email" placeholder="Enter your e-mail address">
+          <input type="text" id="lname" name="email" placeholder="E-Mail Address">
         </div>
         <div>
-          <textarea class="message" name="message" id="message" placeholder="Enter your message to me" cols="30" rows="10" minlength="10" maxlength="100"></textarea>
+          <textarea class="message" name="message" id="message" placeholder="Message" cols="30" rows="10" minlength="10" maxlength="100"></textarea>
         </div>
         <input type="submit" value="Submit" class="btn">
       </div>
@@ -142,6 +139,7 @@
     <img src="./assets/logos/nav_logo.svg" class="nav-logo" />
     <p>Copyright @<span class="copyright-year"></span></p>
   </footer>
+  
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
