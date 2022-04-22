@@ -35,9 +35,9 @@
         <h2>You can focus on running your business while I focus on growing it.</h2>
         <button class="btn">Get Started</button>
       </div>
-      <div class="right-header">
+      <!-- <div class="right-header"> -->
         <img src="./assets/images/profile_photo.webp" class="profile-picture" alt="Profile Picture">
-      </div>
+      <!-- </div> -->
     </div>
   </header>
   </section>
@@ -75,9 +75,9 @@
     </div>
 
     <div class="flex-container-space-around">
-      <div class="photo-container">
+      <!-- <div class="photo-container">
         <img src="./assets/images/grow_business.webp" alt="Growing Your Business">
-      </div>
+      </div> -->
       
       <h3>You get to focus on running your business, while leaving the opportunities for growth to me!</h3>
     </div>
@@ -113,25 +113,30 @@
 
 
   <!-- Contact Me -->
-  <section class="contact" id="contact">
-    <h2 class="section-headline">Feel Free to Reach Out!</h2>
+  <section class="contact">
+    <div class="container">
+      <h1 class="section-headline">Contact me</h1>
+    <div class="form-container">
+      <form action="https://formspree.io/f/xvolqkjr" method="POST">
+        <label class="name">
+          Name:
+          <input type="text" id="name" name="name" required>
+        </label>
 
-    <form action="https://formspree.io/f/xvolqkjr" method="POST">
-      <div class="flex-container-column">
-        <div>
-          <label for="name">Name:</label><br />
-          <input type="text" id="name" name="name" placeholder="Name">
-        </div>
-        <div>
-          <label for="email">E-Mail Address:</label><br />
-          <input type="text" id="lname" name="email" placeholder="E-Mail Address">
-        </div>
-        <div>
-          <textarea class="message" name="message" id="message" placeholder="Message" cols="30" rows="10" minlength="10" maxlength="100"></textarea>
-        </div>
-        <input type="submit" value="Submit" class="btn">
-      </div>
-    </form>
+        <label class="email">
+          Email:
+          <input type="text" name="email" required>
+        </label>
+
+        <label class="message">
+          Message:
+          <textarea name="message" id="message" rows="10" required></textarea>
+        </label>
+
+        <input class="btn btn__submit" type="submit" value="SEND">
+      </form>
+    </div>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -142,6 +147,6 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./js/script.js"></script>
 </body>
-<script src="./js/script.js"></script>
 </html>

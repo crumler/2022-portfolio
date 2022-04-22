@@ -1,64 +1,65 @@
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+/* @media all 
+and (min-width : 320px) 
+and (max-width : 480px) {
   .flex-container,
   .flex-container-space-around {
     flex-direction: column;
   }
 
+  .hero-content {
+    flex-direction: column-reverse;
+  }
+
+  .right-header img {
+    height: 20rem;
+  }
+
+  .photo-container {
+    width: 50%;
+  }
+} */
+
+@media (max-width: 1000px) {
+
+  .right-header {
+    display: none;
+  }
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-/* Styles */
-}
+@media (min-width: 300px) and (max-width: 1000px) {
+  .left-header { text-align: center; }
 
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-/* Styles */
-}
+  .left-header p,
+  .left-header h1,
+  .left-header h2 { margin: 0.5em 0; }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
-}
+  .left-header h2 { padding: 0 2em; }
 
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-/* Styles */
-}
+  /* .profile-picture { display: none; } */
 
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-/* Styles */
-}
+  .how-item {
+    max-width: 30em;
+    align-self: center;
+    margin-right: 0;
+    padding: 0 1em;
+  }
 
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-/* Styles */
-}
+  .flex-container,
+  .flex-container-space-around {
+    flex-direction: column;
+    margin: 2em 0 0 0;
+  }
 
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-/* Styles */
-}
+  .flex-container-space-around h3 {
+    max-width: 95%;
+    padding: 0 3em;
+  }
 
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
+  .project { margin-bottom: 3em; }
+
+  .project:last-child { margin-bottom: 0; }
+
+  input,
+  textarea { min-width: 250px; }
 }
